@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+<title>Lv QingQuan MediaElement - audio/video unification library</title>
+  
+<body 
+style="margin:0;padding:0;font-size:16px;background:#000000;">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">
+   
+<link rel="stylesheet" href="dist/jump-forward/jump-forward.css">
+    
+<link rel="stylesheet" href="dist/skip-back/skip-back.css">
+   
+<link rel="stylesheet" href="dist/speed/speed.css">
+    
+<link rel="stylesheet" href="dist/chromecast/chromecast.css">
+   
+<link rel="stylesheet" href="dist/context-menu/context-menu.css">
+    
+<link rel="stylesheet" href="dist/playlist/playlist.css">
+
+    
+<style>
+       #container {
+            padding: 0 20px 50px;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            tab-size: 2;
+            background: black;
+            color:white;
+        }
+
+        pre[data-lang]::before {
+            content: attr(data-lang);
+            display: block;
+            background-color: #FFA500;
+            background-image: -webkit-linear-gradient(top, #FFA500, #D67E21);
+            background-image: linear-gradient(to bottom, #FFA500, #D67E21);
+            padding: 10px;
+        }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+            padding: 10px 20px;
+            display: inline-block;
+       }
+   
+</style>
+</head>
+
+<body>
+
+<div id="container">
+   
+<section>
+       
+<h1><em>Lv QingQuan MediaElement<em> -Tv Player</h1>
+
+       
+</section>
+
+    
+<div class="players" id="player1-container">
+
+        
+<div class="media-wrapper">
+           
+<video id="player1" width="640" height="360" style="max-width:100%;" controls preload="none"
+                   data-cast-title="Big Buck Bunny"
+                   data-cast-description="Big Buck Bunny is now even more a world standard for video standards"
+                   poster="image/lqq.jpg">
+                
+
+
+<source src="http://223.110.245.139:80/PLTV/3/224/3221226980/index.m3u8" data-playlist-thumbnail="image/01.jpg"
+                        title="FHZS" data-playlist-description="" type="video/mp4">
+                
+<source src="http://223.110.245.139:80/PLTV/3/224/3221226977/index.m3u8" data-playlist-thumbnail="image/lqq03.jpg"
+                        title="FHZW" data-playlist-description="" type="application/x-mpegURL">
+ 
+
+
+<source src="http://tstv.lcdn.claro.net.co/Content/hls_clear/Live/Channel(CNN_INTERNACIONAL)/index.m3u8" data-playlist-thumbnail="image/01.jpg"
+                        title="CNN" data-playlist-description="" type="video/mp4">
+                
+<source src="http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/BBCW/tu1_1.m3u8" data-playlist-thumbnail="image/lqq03.jpg"
+                        title="BBC" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://edge.music-choice-vc-chaina1.top.comcast.net/VideoChannels/MC121/chunklist.m3u8" data-playlist-thumbnail="image/lqq99.jpg"
+                        title="Today's Country" data-playlist-description="" type="video/mp4">
+  
+<source src="http://tstv.lcdn.claro.net.co/Content/hls_clear/Live/Channel(FOXNEWS)/index.m3u8" data-playlist-thumbnail="image/lqq98.jpg"
+                        title="FOX" data-playlist-description="" type="video/mp4">
+  
+<source src="http://rotation.vod.zlive.cc/channel/2190.m3u8" data-playlist-thumbnail="image/lqq.jpg"
+                        title="Wai Zai" data-playlist-description="" type="video/mp4">
+  
+<source src="https://bcsecurelivehls-i.akamaihd.net/hls/live/261547/1539097700001/master.m3u8" data-playlist-thumbnail="image/lqq10.jpg"
+                        title="STAR" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="https://dcunilive2-lh.akamaihd.net/i/dclive_1@390829/master.m3u8" data-playlist-thumbnail="image/lqq11.jpg"
+                        title="dcunilive2" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-b.m3u8" data-playlist-thumbnail="image/lqq12.jpg"
+                        title="m2otv" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://bitcdn-kronehit-live.bitmovin.com/m3u8s/bitcodin.m3u8" data-playlist-thumbnail="image/lqq03.jpg"
+                        title="KroneHIT Music FHD" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://109.123.114.178:1935/Livenewson/Livenewson14/chunklist_w663551997.m3u8" data-playlist-thumbnail="image/CNN.jpg"
+                        title="CNN HD" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://89.211.63.16:1935/HR06/HR06.stream/chunklist.m3u8" data-playlist-thumbnail="image/BBC.jpg"
+                        title="BBC HD" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://109.123.114.178:1935/Livenewson/Livenewson14/playlist.m3u8" data-playlist-thumbnail="image/CNN.jpg"
+                        title="CNN" data-playlist-description="" type="application/x-mpegURL">
+
+<source src="http://nhkwtvglobal-i.akamaihd.net/hls/live/263941/nhkwtvglobal/index_2100.m3u8" data-playlist-thumbnail="image/lqq02.jpg"
+                        title="NHK NEWS" data-playlist-description="" type="application/x-mpegURL">
+                 
+<source src="http://tvemsnbc-lh.akamaihd.net/i/nbcmsnbc_1@122532/master.m3u8" data-playlist-thumbnail="image/MSNBC.jpg"
+                        title="MSNBC" data-playlist-description="" type="application/x-mpegURL">
+                  
+<source src="http://cdn-videos.akamaized.net/btv/desktop/akamai/asia/live/primary.m3u8" data-playlist-thumbnail="image/lqq05.jpg"
+                        title="Bloomberg TV ASIA" data-playlist-description="" type="application/x-mpegURL">
+                  
+<source src="http://cdn-videos.akamaized.net/btv/desktop/akamai/europe/live/primary.m3u8" data-playlist-thumbnail="image/lqq06.jpg"
+                        title="Bloomberg TV Europe" data-playlist-description="" type="application/x-mpegURL">
+                 
+<source src="http://cdn-videos.akamaized.net/btv/desktop/akamai/us/live/primary.m3u8" data-playlist-thumbnail="image/lqq07.jpg"
+                        title="Bloomberg TV US" data-playlist-description="" type="application/x-mpegURL">
+                  
+<source src="http://edge01p.friday.tw/live/fet007/chunklist.m3u" data-playlist-thumbnail="image/lqq70.jpg"
+                        title="Bloomberg TV 007" data-playlist-description="" type="application/x-mpegURL">
+                  
+<source src="https://cbsnhls-i.akamaihd.net/hls/live/264710/CBSN_mdialog/prodstream/master.m3u8" data-playlist-thumbnail="image/lqq10.jpg"
+                        title="CBSN" data-playlist-description="" type="application/x-mpegURL">
+                 
+<source src="http://bcliveuniv-lh.akamaihd.net/i/news_1@194050/master.m3u8" data-playlist-thumbnail="image/lqq11.jpg"
+                        title="CBN NEWS" data-playlist-description="" type="application/x-mpegURL">
+                  
+<source src="http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/04.m3u8" data-playlist-thumbnail="image/lqq12.jpg"
+                        title="SKY NEWS" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://cmghlslive-i.akamaihd.net/hls/live/224714/WJAX/master.m3u8" data-playlist-thumbnail="image/lqq13.jpg"
+                        title="CBS47" data-playlist-description="" type="application/x-mpegURL">
+                  
+<source src="http://mlblive-akc.mlb.com/ls01/mlbam/mlb_network/NETWORK_LINEAR_1/master_wired.m3u8" data-playlist-thumbnail="image/lqq16.jpg"
+                        title="MLB Network" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://origina.streaming.sk/liveedge/tvfashion/chunklist_w1323605783.m3u8" data-playlist-thumbnail="image/lqq17.jpg"
+                        title="Tvfashion" data-playlist-description="" type="application/x-mpegURL">
+                  
+<source src="http://tglcnash-i.akamaihd.net/hls/live/566558/ctv/02.m3u8" data-playlist-thumbnail="image/lqq19.jpg"
+                        title="ASIA NEWS" data-playlist-description="" type="application/x-mpegURL">
+                  
+<source src="http://f24hls-i.akamaihd.net:80/hls/live/221193/F24_EN_LO_HLS/master_900.m3u8" data-playlist-thumbnail="image/lqq20.jpg"
+                        title="F24H" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://bcoveliveios-i.akamaihd.net/hls/live/248519/1242843915001_1/master.m3u8" data-playlist-thumbnail="image/lqq96.jpg"
+                        title="CPAC" data-playlist-description="" type="video/mp4">
+  
+<source src="http://aljazeera-eng-hd-live.hls.adaptive.level3.net/aljazeera/english2/index.m3u8#http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/appleman.m3u8" data-playlist-thumbnail="image/lqq95.jpg"
+                        title="Aljazeera" data-playlist-description="" type="video/mp4">
+  
+<source src="https://d9ruw6nhj5a52.cloudfront.net/live/smil:VODmultibitrate.smil/playlist.m3u8" data-playlist-thumbnail="image/lqq94.jpg"
+                        title="Miracle Channel" data-playlist-description="" type="video/mp4">
+  
+<source src="http://cmghlslive-i.akamaihd.net/hls/live/224716/WSBTV_BREAKING1/master.m3u8" data-playlist-thumbnail="image/lqq93.jpg"
+                        title="WSBTV_BREAKING" data-playlist-description="" type="video/mp4">
+  
+<source src="http://cmghlslive-i.akamaihd.net/hls/live/224672/WHBQ/904k/prog.m3u8" data-playlist-thumbnail="image/lqq92.jpg"
+                        title="FOX13" data-playlist-description="" type="video/mp4">
+  
+<source src="http://cmghlslive-i.akamaihd.net:80/hls/live/224710/WFOX/904k/prog.m3u8" data-playlist-thumbnail="image/lqq91.jpg"
+                        title="FOX30" data-playlist-description="" type="video/mp4">
+  
+<source src="http://cmghlslive-i.akamaihd.net:80/hls/live/224671/WFXT/904k/prog.m3u8" data-playlist-thumbnail="image/lqq90.jpg"
+                        title="FOX25" data-playlist-description="" type="video/mp4">
+  
+<source src="http://cmghlslive-i.akamaihd.net:80/hls/live/224709/KOKI/904k/prog.m3u8" data-playlist-thumbnail="image/lqq89.jpg"
+                        title="FOX23" data-playlist-description="" type="video/mp4">
+  
+<source src="http://wmsrtsp1.rte.ie/live/android.sdp/playlist.m3u8" data-playlist-thumbnail="image/lqq88.jpg"
+                        title="RTE News Now" data-playlist-description="" type="video/mp4">
+  
+<source src="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/master.m3u8" data-playlist-thumbnail="image/lqq87.jpg"
+                        title="The Shopping Channel" data-playlist-description="" type="video/mp4">
+  
+<source src="http://cmghlslive-i.akamaihd.net:80/hls/live/224708/KIRO/904k/prog.m3u8" data-playlist-thumbnail="image/lqq86.jpg"
+                        title="KIRO 7 NEWS" data-playlist-description="" type="video/mp4">
+  
+<source src="http://dwstream5-lh.akamaihd.net/i/dwstream5_live@124540/master.m3u8" data-playlist-thumbnail="image/lqq85.jpg"
+                        title="D W" data-playlist-description="" type="video/mp4">
+  
+<source src="http://ooyalahd2-f.akamaihd.net/i/intv02_delivery@346464/master.m3u8" data-playlist-thumbnail="image/lqq84.jpg"
+                        title="Insight HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://bcoveliveios-i.akamaihd.net/hls/live/217434-b/3083279840001/master.m3u8#http://bcoveliveios-i.akamaihd.net/hls/live/217434/3083279840001/master_900.m3u8" data-playlist-thumbnail="image/lqq83.jpg"
+                        title="London  Live" data-playlist-description="" type="video/mp4">
+  
+<source src="http://cbsnewshd-lh.akamaihd.net/i/CBSNHD_7@199302/index_700_av-p.m3u8" data-playlist-thumbnail="image/lqq82.jpg"
+                        title="CBSN" data-playlist-description="" type="video/mp4">
+  
+<source src="http://bcliveuniv-lh.akamaihd.net/i/iptv1_1@194050/master.m3u8" data-playlist-thumbnail="image/lqq81.jpg"
+                        title="CBN" data-playlist-description="" type="video/mp4">
+  
+<source src="http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/master.m3u8" data-playlist-thumbnail="image/lqq19.jpg"
+                        title="tscstreaming" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://kifi_live-lh.akamaihd.net/i/0v7bzeufb_1@153713/master.m3u8" data-playlist-thumbnail="image/lqq19.jpg"
+                        title="abc8" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://d2vo3ozpc06skj.cloudfront.net/c31-tv-1501124096/index.m3u8" data-playlist-thumbnail="image/lqq18.jpg"
+                        title="c31" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="https://live.olympicchannel.com/ocs/channel01b/NBC_OCS1_VIDEO_5_2264000.m3u8" data-playlist-thumbnail="image/lqq71.jpg"
+                        title="olympicchannel" data-playlist-description="" type="video/mp4">
+  
+<source src="http://wgntribune-lh.akamaihd.net/i/WGNPrimary_1@304622/master.m3u8" data-playlist-thumbnail="image/lqq74.jpg"
+                        title="WGNPrimary" data-playlist-description="" type="video/mp4">
+  
+<source src="https://secure-streams.akamaized.net/rt-doc/index2500.m3u8" data-playlist-thumbnail="image/lqq73.jpg"
+                        title="RT" data-playlist-description="" type="video/mp4">
+  
+<source src="http://27.254.63.162/stream/totnew.php?channel_id=8d45473ff4ca44d79e1abc4516c2fee0" data-playlist-thumbnail="image/lqq69.jpg"
+                        title="channel" data-playlist-description="" type="application/x-mpegURL">
+     
+<source src="http://fs138.happytv.com.tw/live/OcScNdWHvBx5P4w3/index.m3u8" data-playlist-thumbnail="image/lqq68.jpg"
+                        title="happytv" data-playlist-description="" type="application/x-mpegURL">
+                
+<source src="http://102793ooyala-lh.akamaihd.net/i/depers02_delivery@381748/master.m3u8" data-playlist-thumbnail="image/lqq67.jpg"
+                        title="Qmusic" data-playlist-description="" type="application/x-mpegURL">
+                
+<source src="http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/master.m3u8" data-playlist-thumbnail="image/lqq66.jpg"
+                        title="Heart TV" data-playlist-description="" type="application/x-mpegURL">
+                
+<source src="http://acaooyalahd2-lh.akamaihd.net/i/TBN03_delivery@186241/master.m3u8" data-playlist-thumbnail="image/lqq65.jpg"
+                        title="JuCeTV" data-playlist-description=""  type="application/x-mpegURL">
+          
+<source src="http://cmghlslive-i.akamaihd.net/hls/live/224710/WFOX02/2564k/prog.m3u8" data-playlist-thumbnail="image/lqq64.jpg"
+                        title="WFOX02" data-playlist-description="" type="video/mp4">
+  
+<source src="https://58ada6ee80845.streamlock.net/ios/-ttyyoga-live-0832/playlist.m3u8" data-playlist-thumbnail="image/lqq63.jpg"
+                        title="ttyyoga" data-playlist-description=""type="video/flv">
+     
+<source src="http://hls1.live.kksmg.com/live/live24h/playlist.m3u8#http://hls1.live.kksmg.com/live/live24h3/playlist.m3u8" data-playlist-thumbnail="image/lqq62.jpg"
+                        title="live24h" data-playlist-description="" type="rtmp/video"">
+     
+<source src="http://v3.tywj.vip/ppvod/F39D04C133E29CFB17D7FC617D0C26CF.m3u8" data-playlist-thumbnail="image/lqq61.jpg"
+                        title="BTF" data-playlist-description="" type="application/x-mpegURL">
+      
+<source src="http://abcnews24mha-lh.akamaihd.net/i/abcnews24nospe_1@70019/master.m3u8" data-playlist-thumbnail="image/lqq58.jpg"
+                        title="abcnews24mha" data-playlist-description="" type="application/x-mpegURL">
+      
+<source src="http://unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/master.m3u8" data-playlist-thumbnail="image/lqq57.jpg"
+                        title="unilivemtveu" data-playlist-description="" type="application/x-mpegURL">
+     
+<source src="http://ind19-lh.akamaihd.net/i/ind19_9xm@440010/master.m3u8" data-playlist-thumbnail="image/lqq56.jpg"
+                        title="ind19" data-playlist-description="" type="application/x-mpegURL">
+     
+<source src="http://infowarslive-lh.akamaihd.net/i/infowarslivestream_1@353459/master.m3u8" data-playlist-thumbnail="image/lqq55.jpg"
+                        title="infowarslive" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://catholictvhd-lh.akamaihd.net/i/ctvhd_1@88148/master.m3u8" data-playlist-thumbnail="image/lqq02.jpg"
+                        title="catholictvhd" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://weather-lh.akamaihd.net/i/twc_1@92006/master.m3u8" data-playlist-thumbnail="image/lqq40.jpg"
+                        title="weather" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="https://nasa-i.akamaihd.net/hls/live/253566/NASA-NTV2-Media/master.m3u8" data-playlist-thumbnail="image/lqq29.jpg"
+                        title="NASA NTV2" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="https://nasa-i.akamaihd.net/hls/live/253565/NASA-NTV1-Public/master.m3u8" data-playlist-thumbnail="image/lqq28.jpg"
+                        title="NASA NTV1" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="rtmp://109.71.162.112:1935/live/sd.jasminchannel.stream" data-playlist-thumbnail="image/lqq27.jpg"
+                        title="jasminchannel" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/master.m3u8" data-playlist-thumbnail="image/lqq32.jpg"
+                        title="mtvno" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://usaserver.miamitvchannel.com/miamitv/smil:miamitv/master.m3u8" data-playlist-thumbnail="image/lqq31.jpg"
+                        title="miamitv" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://tglcnash-i.akamaihd.net/hls/live/566558/ctv/02.m3u8" data-playlist-thumbnail="image/lqq32.jpg"
+                        title="tglcnash" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://tglcnash-i.akamaihd.net/hls/live/566558/ctv/02.m3u8" data-playlist-thumbnail="image/lqq34.jpg"
+                        title="OKTO" data-playlist-description="" type="application/x-mpegURL">
+   
+
+
+
+
+<source src="http://dlhls.cdn.zhanqi.tv/zqlive/49427_jmACJ.m3u8" data-playlist-thumbnail="image/lqq15.jpg"
+                        title="SHAN GUO YAN YI" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://chinanet2-live.bestvcdn.com.cn/live/program/Dkankan.live.bestvcdn.com.cnD/_rYG-001Cte_keyB45B8BB90A3AE8D9262CA510D209766B6C5B0759821C1CBE18DDEB666652A083_/live/wypd/400000/mnf.m3u8" data-playlist-thumbnail="image/lqq14.jpg"
+                        title="ICS" data-playlist-description="" type="application/x-mpegURL">
+ 
+<source src="http://rotation.vod.zlive.cc/channel/1083.m3u8" data-playlist-thumbnail="image/lqq08.jpg"
+                        title="TTXS--HNTV" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://rotation.vod.zlive.cc/channel/1084.m3u8" data-playlist-thumbnail="image/lqq09.jpg"
+                        title="KLDBY--HNTV" data-playlist-description="" type="application/x-mpegURL">
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225891/index.m3u8" data-playlist-thumbnail="image/lqq18.jpg"
+                        title="Newtv HD" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225922/index.m3u8" data-playlist-thumbnail="image/lqq110.jpg"
+                        title="CCTV1 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225923/index.m3u8" data-playlist-thumbnail="image/lqq109.jpg"
+                        title="CCTV2 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225924/index.m3u8" data-playlist-thumbnail="image/lqq108.jpg"
+                        title="CCTV3 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225925/index.m3u8" data-playlist-thumbnail="image/lqq107.jpg"
+                        title="CCTV5 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225939/index.m3u8" data-playlist-thumbnail="image/lqq106.jpg"
+                        title="CCTV5+" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225926/index.m3u8" data-playlist-thumbnail="image/lqq105.jpg"
+                        title="CCTV6 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225927/index.m3u8" data-playlist-thumbnail="image/lqq104.jpg"
+                        title="CCTV7 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225928/index.m3u8" data-playlist-thumbnail="image/lqq103.jpg"
+                        title="CCTV8 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225929/index.m3u8" data-playlist-thumbnail="image/lqq102.jpg"
+                        title="CCTV9 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225931/index.m3u8" data-playlist-thumbnail="image/lqq101.jpg"
+                        title="CCTV10 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225932/index.m3u8" data-playlist-thumbnail="image/lqq.jpg"
+                        title="CCTV12 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225933/index.m3u8" data-playlist-thumbnail="image/lqq100.jpg"
+                        title="CCTV14 HD" data-playlist-description="" type="video/mp4">
+  
+<source src="http://60.199.188.120/HLS/WG_ETTV-N/index.m3u8" data-playlist-thumbnail="image/lqq97.jpg"
+                        title="DONG SHENG NEWS" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225834/index.m3u8" data-playlist-thumbnail="image/lqq80.jpg"
+                        title="JXTV" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225934/index.m3u8" data-playlist-thumbnail="image/lqq79.jpg"
+                        title="ZJTV" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225935/index.m3u8" data-playlist-thumbnail="image/lqq78.jpg"
+                        title="HNTV" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225936/index.m3u8" data-playlist-thumbnail="image/lqq77.jpg"
+                        title="DFTV" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225937/index.m3u8" data-playlist-thumbnail="image/lqq76.jpg"
+                        title="BJTV" data-playlist-description="" type="video/mp4">
+  
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225938/index.m3u8" data-playlist-thumbnail="image/lqq75.jpg"
+                        title="SZTV" data-playlist-description="" type="video/mp4">
+  
+<source src="http://219.147.154.107/yfhdl.cdn.zhanqi.tv/zqlive/81077_ZRWAB_720p.m3u8" data-playlist-thumbnail="image/lqq72.jpg"
+                        title="XIONG SHENG" data-playlist-description="" type="application/x-mpegURL">
+                
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225829/index.m3u8" data-playlist-thumbnail="image/lqq54.jpg"
+                        title="CCTV1" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225923/index.m3u8" data-playlist-thumbnail="image/lqq53.jpg"
+                        title="cctv2" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225924/index.m3u8" data-playlist-thumbnail="image/lqq52.jpg"
+                        title="cctv3" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225925/index.m3u8" data-playlist-thumbnail="image/lqq51.jpg"
+                        title="cctv5" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225939/index.m3u8" data-playlist-thumbnail="image/lqq50.jpg"
+                        title="cctv5+" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225926/index.m3u8" data-playlist-thumbnail="image/lqq49.jpg"
+                        title="cctv6" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225927/index.m3u8" data-playlist-thumbnail="image/lqq48.jpg"
+                        title="cctv7" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225928/index.m3u8" data-playlist-thumbnail="image/lqq47.jpg"
+                        title="cctv8" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225929/index.m3u8" data-playlist-thumbnail="image/lqq64.jpg"
+                        title="cctv9" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225931/index.m3u8" data-playlist-thumbnail="image/lqq45.jpg"
+                        title="cctv10" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src=" http://117.169.120.217:8080/PLTV/88888888/224/3221225640/index.m3u8" data-playlist-thumbnail="image/lqq44.jpg"
+                        title="cctv11" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225932/index.m3u8" data-playlist-thumbnail="image/lqq43.jpg"
+                        title="cctv12" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225933/index.m3u8" data-playlist-thumbnail="image/lqq42.jpg"
+                        title="cctv14" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.251.61.207/PLTV/88888888/224/3221225817/index.m3u8" data-playlist-thumbnail="image/lqq70.jpg"
+                        title="CCTV13" data-playlist-description="" type="application/x-mpegURL">
+  
+<source src="http://117.169.120.217:8080/PLTV/88888888/224/3221225644/index.m3u8" data-playlist-thumbnail="image/lqq41.jpg"
+                        title="cctv15" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225944/index.m3u8" data-playlist-thumbnail="image/lqq38.jpg"
+                        title="beijingjishi" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225946/index.m3u8" data-playlist-thumbnail="image/lqq37.jpg"
+                        title="shanghaijilu" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225905/index.m3u8" data-playlist-thumbnail="image/lqq36.jpg"
+                        title="wuxingtiyu" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225913/index.m3u8" data-playlist-thumbnail="image/lqq35.jpg"
+                        title="jisuqiche" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225878/index.m3u8 " data-playlist-thumbnail="image/lqq34.jpg"
+                        title="NewTV dhwg" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://183.252.176.40//PLTV/88888888/224/3221225891/index.m3u8" data-playlist-thumbnail="image/lqq73.jpg"
+                        title="NewTV jpdy" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://117.169.120.142:8080/wh7f454c46tw1875988299_1988371409/ysten-businessmobile/live/cctv-9/dujuejiami.m3u8" data-playlist-thumbnail="image/lqq31.jpg"
+                        title="CGTN" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8" data-playlist-thumbnail="image/lqq39.jpg"
+                        title="hkstv" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://61.58.60.247:9000/live/176.m3u8" data-playlist-thumbnail="image/lqq30.jpg"
+                        title="AFC" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://61.58.60.247:9000/live/178.m3u8" data-playlist-thumbnail="image/lqq25.jpg"
+                        title="DIVA" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://61.58.60.247:9000/live/222.m3u8" data-playlist-thumbnail="image/lqq24.jpg"
+                        title="CGTN" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://61.58.60.247:9000/live/221.m3u8" data-playlist-thumbnail="image/lqq23.jpg"
+                        title="CGTN Documentary" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://61.58.60.247:9000/live/257.m3u8" data-playlist-thumbnail="image/lqq22.jpg"
+                        title="CNEX" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://61.58.60.247:9000/live/243.m3u8" data-playlist-thumbnail="image/lqq21.jpg"
+                        title="JAPAN" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://61.58.60.247:9000/live/180.m3u8" data-playlist-thumbnail="image/lqq20.jpg"
+                        title="E E" data-playlist-description="" type="application/x-mpegURL">
+   
+<source src="http://live.streamingfast.net/hls-live/goodtv/_definst_/liveevent/live-ch1-2.m3u8" data-playlist-thumbnail="image/lqq19.jpg"
+                        title="goodtv" data-playlist-description="" type="application/x-mpegURL">
+   
+</video>
+        </div>
+
+       
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelement-and-player.min.js">
+</script>
+<script src="dist/jump-forward/jump-forward.js">
+</script>
+<script src="dist/skip-back/skip-back.js">
+</script>
+<script src="dist/speed/speed.js"></script>
+<script src="dist/chromecast/chromecast.js">
+</script>
+<script src="dist/context-menu/context-menu.js">
+</script>
+<script src="dist/playlist/playlist.js">
+</script>
+<script id="mejs-code">
+
+var mediaElements = document.querySelectorAll('video, audio');
+
+
+for (var i = 0, total = mediaElements.length;
+i < total; i++) {
+		var features = ['prevtrack', 'playpause', 'nexttrack', 'current', 'progress', 'duration', 'speed', 'skipback', 'jumpforward',
+		'markers', 'volume', 'playlist', 'loop', 'shuffle', 'contextmenu'];
+
+		// To demonstrate the use of Chromecast with audio
+
+if (mediaElements[i].tagName === 'AUDIO') {
+		    features.push('chromecast');
+        }
+	    new MediaElementPlayer(mediaElements[i],
+{
+		    // This is needed to make Jump Forward to work correctly
+            pluginPath:
+'https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.5/',
+		    shimScriptAccess: 'always',
+		    autoRewind: false,
+		    features: features,
+            currentMessage: 'Now playing:'
+	    });
+    }
+</script>
+<script>
+document.body.querySelector('code').innerText = document.getElementById('mejs-code').innerText;
+
+</script>
+
+</body>
+
+</html>
